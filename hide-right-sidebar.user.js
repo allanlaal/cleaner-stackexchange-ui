@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version     	2020-12-20.11
+// @version     	2020-12-20.15
 // @name        	Hide Stack Overflow Sidebar
 // @description 	Hides room wasting/attention diverting sidebars on ALL SO/SE sites
 // @namespace   	https://github.com/allanlaal/hide-stackexchange-sidebars
@@ -19,16 +19,20 @@
 // @include    		/^https?:\/\/superuser\.com/.*$/
 // @include    		/^https?:\/\/askubuntu\.com/.*$/
 // @include    		/^https?:\/\/stackapps\.com/.*$/
-// @include    		/^https?:\/\/mathoverflow\.com/.*$/
+// @include    		/^https?:\/\/mathoverflow\.net/.*$/
 // @exclude 		*://chat.stackexchange.com/*
 // ==/UserScript==
 
 (function() {
 	'use strict';
 	
-	document.getElementById('sidebar').style.display = 'none'; // right sidebar
+	// right sidebar:
+	document.getElementById('sidebar').style.display = 'none';
 	
+	// top Hero/spam banner:
 	document.getElementsByClassName('js-dismissable-hero')[0].style.display = 'none'; 
+	
+	// make main content area use room we just won:
 	document.getElementById('mainbar').style = 'width: auto';
 })();
 
