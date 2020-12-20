@@ -31,6 +31,7 @@
 	
 	document.getElementById('sidebar').style.display = 'none';
 	
+	document.getElementsByClassName('js-dismissable-hero')[0].style.display = 'none'; 
 	document.getElementById('mainbar').style = 'width: auto';
 })();
 
