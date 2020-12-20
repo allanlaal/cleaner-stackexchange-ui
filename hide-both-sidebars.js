@@ -6,6 +6,7 @@
 // @compatible      	firefox
 // @compatible      	chrome
 // @run-at          	document-start
+// @grant        	none
 // @homepageURL     	https://github.com/allanlaal/hide-stackexchange-sidebars
 // @supportURL      	https://github.com/allanlaal/hide-stackexchange-sidebars/issues
 // @contributionURL	https://github.com/allanlaal/hide-stackexchange-sidebars
