@@ -12,9 +12,10 @@
 // @contributionURL	https://github.com/allanlaal/hide-stackexchange-sidebars
 // @author		Allan Laal
 // @inspiration     	Machavity ( https://gist.github.com/machavity/420197ff9108e0b757c9bbb7d487f965 )
-// @include    		https://(.*\.)?stackexchange.com/*
-// @include    		https://(.*\.)?stackoverflow.com/*
+// @include    		https://stackexchange.com/*
+// @include    		https://*.stackexchange.com/*
 // @include    		https://stackoverflow.com/*
+// @include    		https://*.stackoverflow.com/*
 // @include    		https://serverfault.com/*
 // @include    		https://superuser.com/*
 // @include    		https://askubuntu.com/*
