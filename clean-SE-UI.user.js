@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version     	2020-12-21.7
+// @version     	2020-12-21.8
 // @name        	Cleaner UI for SE/SO sites
 // @description 	Hides room wasting/attention diverting sidebars on ALL SO/SE sites
 // @namespace   	https://github.com/allanlaal/hide-stackexchange-sidebars
@@ -24,22 +24,18 @@
 // ==/UserScript==
 
 (function() {
-	
-	// hide left sidebar: 
-	document.getElementsByClassName('left-sidebar')[0].style.display = 'none'; // unpinned
-	document.getElementsByClassName('left-sidebar')[1].style.display = 'none'; // pinned
-	
-	// hide right sidebar:
-	document.getElementById('sidebar').style.display = 'none';
-	
+    // jQuery already loaded in SE/SO
+
+	jQuery('.left-sidebar').hide();
+
+    jQuery('#sidebar').hide(); // right sidebar
+
 	// stretch main content area to use the extra room we just won:
-	document.getElementById('mainbar').style = 'width: auto';
-	
+    jQuery('#mainbar').css('width', 'auto');
+
 	// hide top Hero/spam banner:
-	document.getElementsByClassName('js-dismissable-hero')[0].style.display = 'none'; 
-	
-	// hide cookie GDPR nag:
-	document.getElementById('js-gdpr-consent-banner').style.display = 'none';
-	
+    jQuery('.js-dismissable-hero').hide();
+
+    jQuery('.js-gdpr-consent-banner').hide();
 })();
 
