@@ -25,18 +25,19 @@
 // ==/UserScript==
 
 (function() {
-    // jQuery already loaded in SE/SO
+	// jQuery already loaded in SE/SO
 
+	jQuery('.teams-promo').remove();
 	jQuery('.left-sidebar').hide();
 
-    jQuery('#sidebar').hide(); // right sidebar
+	jQuery('#sidebar').hide(); // right sidebar
 
 	// stretch main content area to use the extra room we just won:
-    jQuery('#mainbar').css('width', 'auto');
+	jQuery('#mainbar').css('width', 'auto');
 
 	// hide top Hero/spam banner:
-    jQuery('.js-dismissable-hero').hide();
+	jQuery('.js-dismissable-hero').hide();
 
-    jQuery('.js-gdpr-consent-banner').hide();
+	jQuery('.js-gdpr-consent-banner').hide();
 })();
 
