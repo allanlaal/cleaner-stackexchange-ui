@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version     	2020-12-21.8
+// @version     	2021-04-15
 // @name        	Cleaner UI for SE/SO sites
 // @description 	Hides room wasting/attention diverting sidebars on ALL SO/SE sites
 // @namespace   	https://github.com/allanlaal/hide-stackexchange-sidebars
